@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/concept1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riya's Landing page</title>
+    <style>
+      body{
+          text-align: center;
+        background-color: paleturquoise;
+        margin: 0;
+      }
+      img{
+          width: 300px;
+          height: 300px;
+          border-radius: 25%;
+      }
+      #a2{
+           background-color: gray;
+        
+      }
+        </style>
+</head>
+<body>
+    <!--Start of the File-->
+    <h1>welcome to my page</h1>
+    <!--image section-->
+    <div>
+       <img src="./Riya&#39;s Landing page_files/profile.jpg">
+        </div>
+    <!--Introduction-->
+      <div id="a1">
+         <h2>Hi there!!<br>
+        This is Riya Nigam</h2>
+        <p>I'm from Varanasi and I've done my graduation in B.Tech from Lucknow,Uttar Pradesh</p>
+       <h3>My goal is to become a Full Stack Web Developer</h3>  
+    </div>
+    <!--Contacts-->
+    <div id="a2">
+       <table>
+           <tbody><tr>
+               <th>
+                 Contact Me  
+               </th>
+           </tr>
+           <tr>
+               <td>+91-9555620364</td>
+           </tr>
+           <tr>
+               <td>+91-7408510797</td>
+           </tr>
+           <tr>
+               <th>Mail</th>
+           </tr>
+           <tr>
+               <td>riyanigam31081@gmail.com</td>
+           </tr>
+       </tbody></table>
+    </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
